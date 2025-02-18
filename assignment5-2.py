@@ -18,3 +18,27 @@ print("Training RMSE:", rmse_train)
 print("Testing RMSE:", rmse_test)
 print("Training R2:", r2_score(y_train, model.predict(X_train)))
 print("Testing R2:", r2_score(y_test, y_pred))
+
+
+"""
+Step 0: Read the dataset into pandas dataframe paying attention to file delimiter.
+- loadedthe dataset using pandas' read_csv method.
+
+Step 1: Identify the variables inside the dataset.
+
+Step 2: Investigate the correlation between the variables.
+
+Step 3: Choose appropriate variables to predict company profit. Justify your choice.
+- R&D Spend and Marketing Spend due to their high correlation with Profit, while Administration had less impact.
+
+Step 4: Plot explanatory variables against profit in order to confirm (close to) linear dependence.
+- Visualizing the data confirmed a strong linear relationship.
+
+Step 5: Form training and testing data (80/20 split).
+- 80/20 split to ensure a robust model evaluation.
+
+Step 6: Train linear regression model with training data.
+- simple linear regression model was trained.
+
+Step 7: Compute RMSE and R2 values for training and testing data separately.
+"""

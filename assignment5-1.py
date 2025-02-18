@@ -17,3 +17,15 @@ mse = mean_squared_error(y_test, y_pred)
 rmse = mse ** 0.5
 print("RMSE:", rmse)
 print("R2 Score:", r2_score(y_test, y_pred))
+
+
+"""
+Question a: Which variable would you add next? Why?
+- We added bp"blood pressure" because it shows a reasonable correlation with diabetes progression.
+
+Question b: How does adding it affect the model's performance?
+- Adding bp improved the model's performance slightly, as seen from the RMSE and R2 scores below. 
+
+Question d: Does it help if you add even more variables?
+- Adding even more variables may lead to overfitting if they are not strongly correlated with the target. 
+"""
