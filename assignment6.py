@@ -29,9 +29,9 @@ df3 = pd.get_dummies(df2,columns=['job','marital','default','housing','poutcome'
 df3['y'] = df3['y'].map({'yes': 1, 'no': 0})
 
 """4) Produce a heat map of correlation coefficients for all variables in df3."""
-plt.figure(figsize=(12, 8))
+fig = plt.figure(figsize=(12, 8))
+fig.suptitle('Heatmap of Correlation Coefficients') 
 sns.heatmap(df3.corr(), annot=False, cmap='coolwarm', linewidths=0.5)
-plt.title("Heatmap of Correlation Coefficients")
 plt.show()
 print("-------------------------------------------------------------------------------")
 print(" Describe the amount of correlation between the variables in your own words.")
